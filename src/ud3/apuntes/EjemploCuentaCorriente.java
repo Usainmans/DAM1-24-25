@@ -9,8 +9,8 @@ public class EjemploCuentaCorriente {
         CuentaCorriente.setBanco("Abanca");
 
         System.out.println(CuentaCorriente.getBanco());
-        cc.mostrar();
-        cc2.mostrar();
+        cc.mostrarInformacion();
+        cc2.mostrarInformacion();
 
         Gestor gestor = new Gestor("Gestoría Pepe", "986868686");
         cc.setGestor(gestor);

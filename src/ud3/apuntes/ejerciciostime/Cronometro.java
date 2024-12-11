@@ -19,6 +19,7 @@ public class Cronometro {
         Scanner sc = new Scanner(System.in);
         System.out.println("Pulsa Enter para iniciar el cronómetro");
         sc.nextLine();
+        
 
         LocalTime inicio = LocalTime.now();
         System.out.println("Cronómetro iniciado a las " + inicio);

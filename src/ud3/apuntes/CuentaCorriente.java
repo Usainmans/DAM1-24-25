@@ -7,7 +7,6 @@ public class CuentaCorriente {
     private Gestor gestor;
     private static String banco;
 
-
     public CuentaCorriente(String dni, String titular, double saldo) {
         this.dni = dni;
         this.titular = titular;
@@ -29,8 +28,6 @@ public class CuentaCorriente {
     public static void setBanco(String banco) {
         CuentaCorriente.banco = banco;
     }
-
-    
 
     public Gestor getGestor() {
         return gestor;
@@ -59,8 +56,6 @@ public class CuentaCorriente {
         System.out.println("- Saldo: " + saldo + " euros");
     }
 
-
-
     public static void main(String[] args) {
         CuentaCorriente cc = new CuentaCorriente("55555555Z", "Pepe", 1000);
         CuentaCorriente cc2 = new CuentaCorriente("33333333R", "María", 2000);
@@ -74,9 +69,7 @@ public class CuentaCorriente {
         Gestor gestor = new Gestor("Gestoría Pepe", "986868686");
         cc.gestor = gestor;
         System.out.println(cc.gestor.nombre + "(" + cc.gestor.telefono + ")");
-        
+
     }
-
-
 
 }
